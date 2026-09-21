@@ -699,7 +699,7 @@ new QRCode(qrContainer, {
 });
 
     new QRCode(qrContainer, {
-        text: qrData,
+    text: verificationUrl,
         width: 120,
         height: 120,
         colorDark: "#000000",
