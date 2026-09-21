@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Your Identity | Prahar</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="grid-background"></div>
+
+    <div class="glow glow-cyan"></div>
+    <div class="glow glow-purple"></div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+   <header class="navbar">
+
+    <div class="brand">
+
+        <div class="brand-logo">
+            <img src="assets/prahar-logo.png" alt="Prahar Logo">
+        </div>
+
+        <span>PRAHAR</span>
+
+    </div>
+
+    <div class="event-date-small">
+
+        <span>TECH EVENT</span>
+
+        <strong>25.09.2026</strong>
+
+    </div>
+
+</header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main class="hero">
+
+        <!-- LEFT CONTENT -->
+
+        <section class="hero-content">
+
+            <div class="eyebrow">
+
+                <span class="status-dot"></span>
+
+                PRAHAR PRESENTS
+
+            </div>
+
+
+            <h1>
+
+                CODE
+
+                <span>YOUR</span>
+
+                IDENTITY
+
+            </h1>
+
+
+            <p class="tagline">
+
+                Build. Brand. Be Seen.
+
+            </p>
+
+
+            <!-- Topics -->
+
+            <div class="topics">
+
+                <span>Portfolio</span>
+
+                <span>LinkedIn</span>
+
+                <span>GitHub</span>
+
+            </div>
+
+
+            <!-- Date -->
+
+            <div class="event-date">
+
+                <div class="date-number">
+                    25
+                </div>
+
+                <div class="date-text">
+
+                    <strong>SEPTEMBER</strong>
+
+                    <span>2026</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CTA -->
+
+            <button class="primary-btn" onclick="startRegistration()">
+
+                <span>RESERVE MY SPOT</span>
+
+                <strong>→</strong>
+
+            </button>
+
+
+            <p class="limited">
+
+                LIMITED SPOTS • FIRST-YEAR STUDENTS
+
+            </p>
+
+        </section>
+
+<!-- ================= RIGHT VISUAL ================= -->
+
+<section class="hero-visual">
+
+    <div class="visual-container">
+
+
+        <!-- Orbital rings -->
+
+        <div class="orbit orbit-one"></div>
+
+        <div class="orbit orbit-two"></div>
+
+        <div class="orbit orbit-three"></div>
+
+
+        <!-- Core -->
+
+        <div class="core">
+
+            <span>&lt;/&gt;</span>
+
+        </div>
+
+
+        <!-- Floating cards -->
+
+        <div class="floating-card card-portfolio">
+
+            <div class="card-number">
+                01
+            </div>
+
+            <div>
+                <small>BUILD</small>
+                <strong>PORTFOLIO</strong>
+            </div>
+
+        </div>
+
+
+        <div class="floating-card card-linkedin">
+
+            <div class="card-number">
+                02
+            </div>
+
+            <div>
+                <small>OPTIMIZE</small>
+                <strong>LINKEDIN</strong>
+            </div>
+
+        </div>
+
+
+        <div class="floating-card card-github">
+
+            <div class="card-number">
+                03
+            </div>
+
+            <div>
+                <small>MASTER</small>
+                <strong>GITHUB</strong>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= SUCCESS SCREEN ================= -->
+
+<section id="successSection" class="success-section hidden">
+
+    <div class="success-container">
+
+
+        <!-- Success Message -->
+
+        <div class="success-header">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p class="success-eyebrow">
+                REGISTRATION CONFIRMED
+            </p>
+
+            <h1>
+                YOU’RE IN. <span>🚀</span>
+            </h1>
+
+            <p class="success-message">
+                Your journey to building a professional digital identity starts here.
+            </p>
+
+        </div>
+
+
+        <!-- Journey -->
+
+        <div class="success-journey">
+
+            <div class="journey-line"></div>
+
+
+            <div class="journey-item">
+
+                <span>01</span>
+
+                <div>
+
+                    <strong>Build</strong>
+
+                    <small>Portfolio</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="journey-item">
+
+                <span>02</span>
+
+                <div>
+
+                    <strong>Brand</strong>
+
+                    <small>LinkedIn</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="journey-item">
+
+                <span>03</span>
+
+                <div>
+
+                    <strong>Be Seen</strong>
+
+                    <small>GitHub</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Registration ID -->
+
+        <div class="registration-id-box">
+
+            <span>
+                YOUR REGISTRATION ID
+            </span>
+
+            <strong id="successRegistrationId">
+                CYI-26-XXXXX
+            </strong>
+
+        </div>
+
+
+        <!-- ================= DIGITAL EVENT PASS ================= -->
+
+        <div class="event-pass">
+
+
+            <div class="pass-top">
+
+                <div class="pass-brand">
+
+                    <img
+                        src="assets/prahar-logo.png"
+                        alt="Prahar Logo"
+                    >
+
+                    <div>
+
+                        <span>
+                            PRAHAR
+                        </span>
+
+                        <small>
+                            TECH COMMUNITY
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <span class="pass-label">
+                    EVENT PASS
+                </span>
+
+            </div>
+
+
+            <div class="pass-event">
+
+                <p>
+                    CODE YOUR IDENTITY
+                </p>
+
+                <h2>
+                    Build. Brand. Be Seen.
+                </h2>
+
+                <span>
+                    25 SEPTEMBER 2026
+                </span>
+
+            </div>
+
+
+            <div class="pass-divider"></div>
+
+
+            <div class="pass-student">
+
+
+                <div class="pass-info">
+
+
+                    <div class="pass-field">
+
+                        <span>
+                            NAME
+                        </span>
+
+                        <strong id="passName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="pass-field">
+
+                        <span>
+                            STUDENT ID
+                        </span>
+
+                        <strong id="passStudentId">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="pass-field">
+
+                        <span>
+                            SECTION
+                        </span>
+
+                        <strong id="passSection">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="pass-field">
+
+                        <span>
+                            SPECIALIZATION
+                        </span>
+
+                        <strong id="passSpecialization">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="pass-field">
+
+                        <span>
+                            YEAR
+                        </span>
+
+                        <strong id="passYear">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="pass-field">
+
+                        <span>
+                            REGISTRATION ID
+                        </span>
+
+                        <strong id="passRegistrationId">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- QR Code -->
+
+                <div class="pass-qr-area">
+
+                    <div id="passQrCode"></div>
+
+                    <small>
+                        SCAN TO VERIFY
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="pass-footer">
+
+                <span>
+                    PRAHAR • CODE YOUR IDENTITY
+                </span>
+
+                <span>
+                    25.09.2026
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Actions -->
+
+        <div class="success-actions">
+
+
+            <button
+                class="save-pass-btn"
+                onclick="saveEventPass()"
+            >
+                SAVE / PRINT PASS
+            </button>
+
+
+            <button
+                class="back-home-btn"
+                onclick="backToLanding()"
+            >
+                BACK TO HOME
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <span>
+            PRAHAR COMMUNITY
+        </span>
+
+        <span>
+            BUILD • BRAND • BE SEEN
+        </span>
+
+        <span>
+            SCROLL ↓
+        </span>
+
+    </footer>
+    
+    <!-- ================= REGISTRATION STEP 01 ================= -->
+
+<section id="registrationSection" class="registration-section hidden">
+
+    <div class="registration-container">
+
+        <!-- Header -->
+
+        <div class="registration-header">
+
+            <button class="back-btn" onclick="backToLanding()">
+                ← BACK
+            </button>
+
+            <div class="step-counter">
+                <strong>01</strong>
+                <span>/ 03</span>
+            </div>
+
+        </div>
+
+
+        <!-- Progress -->
+
+        <div class="progress-track">
+            <div class="progress-fill"></div>
+        </div>
+
+
+        <!-- Heading -->
+
+        <div class="registration-heading">
+
+            <span class="step-label">
+                STEP 01
+            </span>
+
+            <h2>
+                LET'S START<br>
+                WITH <span>YOU.</span>
+            </h2>
+
+            <p>
+                Tell us a little about yourself.
+            </p>
+
+        </div>
+
+
+        <!-- Form -->
+
+        <div class="registration-form">
+
+
+            <!-- Full Name -->
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    FULL NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                >
+
+            </div>
+
+            <!-- College Student ID -->
+
+<div class="form-group">
+
+    <label for="studentId">
+        COLLEGE STUDENT ID
+    </label>
+
+    <input
+        type="text"
+        id="studentId"
+        placeholder="Enter your college student ID"
+    >
+
+</div>
+<!-- Section -->
+
+<div class="form-group">
+
+    <label for="studentSection">
+        SECTION
+    </label>
+
+    <select id="studentSection">
+
+        <option value="">
+            Select your section
+        </option>
+
+        <option value="Section 1">
+            Section 1
+        </option>
+
+        <option value="Section 2">
+            Section 2
+        </option>
+
+        <option value="Section 3">
+            Section 3
+        </option>
+
+        <option value="Section 4">
+            Section 4
+        </option>
+
+        <option value="Section 5">
+            Section 5
+        </option>
+
+        <option value="Section 6">
+            Section 6
+        </option>
+
+        <option value="Section 7">
+            Section 7
+        </option>
+
+        <option value="Section 8">
+            Section 8
+        </option>
+
+        <option value="Section 9">
+            Section 9
+        </option>
+
+        <option value="Section 10">
+            Section 10
+        </option>
+
+    </select>
+
+</div>
+
+
+            <!-- Branch -->
+<div class="form-group">
+
+    <label>
+        SPECIALIZATION / INTEREST
+    </label>
+
+    <div class="branch-options">
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'CSE')"
+        >
+            CSE
+        </button>
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'Full Stack Development')"
+        >
+            FULL STACK
+        </button>
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'Artificial Intelligence')"
+        >
+            AI
+        </button>
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'Machine Learning')"
+        >
+            MACHINE LEARNING
+        </button>
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'Data Science')"
+        >
+            DATA SCIENCE
+        </button>
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'Cybersecurity')"
+        >
+            CYBERSECURITY
+        </button>
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'Cloud & DevOps')"
+        >
+            CLOUD & DEVOPS
+        </button>
+
+        <button
+            type="button"
+            class="branch-btn"
+            onclick="selectSpecialization(this, 'App Development')"
+        >
+            APP DEVELOPMENT
+        </button>
+
+    </div>
+
+</div>
+
+
+            <!-- Year -->
+
+            <div class="form-group">
+
+                <label for="studentYear">
+                    YEAR
+                </label>
+
+                <select id="studentYear">
+
+                    <option value="">
+                        Select your year
+                    </option>
+
+                    <option value="1st Year">
+                        1st Year
+                    </option>
+
+                    <option value="2nd Year">
+                        2nd Year
+                    </option>
+
+                    <option value="3rd Year">
+                        3rd Year
+                    </option>
+
+                    <option value="4th Year">
+                        4th Year
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Continue -->
+
+            <button
+                class="primary-btn continue-btn"
+                onclick="goToStepTwo()"
+            >
+
+                <span>CONTINUE</span>
+
+                <strong>→</strong>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= REGISTRATION STEP 02 ================= -->
+
+<section id="step2Section" class="registration-section hidden">
+
+    <div class="registration-container">
+
+        <!-- Header -->
+
+        <div class="registration-header">
+
+            <button class="back-btn" onclick="backToStepOne()">
+                ← BACK
+            </button>
+
+            <div class="step-counter">
+
+                <strong>02</strong>
+
+                <span>/ 03</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Progress -->
+
+        <div class="progress-track">
+
+            <div class="progress-fill step-two-progress"></div>
+
+        </div>
+
+
+        <!-- Heading -->
+
+        <div class="registration-heading">
+
+            <span class="step-label">
+                STEP 02
+            </span>
+
+            <h2>
+                WHAT'S MISSING FROM<br>
+                YOUR <span>DIGITAL IDENTITY?</span>
+            </h2>
+
+            <p>
+                Choose what you want to learn or improve.
+            </p>
+
+        </div>
+
+
+        <!-- ================= DIGITAL IDENTITY ================= -->
+
+        <div class="identity-options">
+
+
+            <!-- PORTFOLIO -->
+
+            <button
+                type="button"
+                class="identity-card"
+                onclick="toggleGoal(this, 'Portfolio')"
+            >
+
+                <div class="identity-icon">
+                    &lt;/&gt;
+                </div>
+
+                <div class="identity-content">
+
+                    <h3>
+                        PORTFOLIO
+                    </h3>
+
+                    <p>
+                        I don't have one yet.
+                    </p>
+
+                </div>
+
+                <div class="identity-check">
+                    ✓
+                </div>
+
+            </button>
+
+
+            <!-- LINKEDIN -->
+
+            <button
+                type="button"
+                class="identity-card"
+                onclick="toggleGoal(this, 'LinkedIn')"
+            >
+
+                <div class="identity-icon">
+                    in
+                </div>
+
+                <div class="identity-content">
+
+                    <h3>
+                        LINKEDIN
+                    </h3>
+
+                    <p>
+                        My profile needs improvement.
+                    </p>
+
+                </div>
+
+                <div class="identity-check">
+                    ✓
+                </div>
+
+            </button>
+
+
+            <!-- GITHUB -->
+
+            <button
+                type="button"
+                class="identity-card"
+                onclick="toggleGoal(this, 'GitHub')"
+            >
+
+                <div class="identity-icon">
+                    ◉
+                </div>
+
+                <div class="identity-content">
+
+                    <h3>
+                        GITHUB
+                    </h3>
+
+                    <p>
+                        I want to use it professionally.
+                    </p>
+
+                </div>
+
+                <div class="identity-check">
+                    ✓
+                </div>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <div class="contact-form">
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    EMAIL ADDRESS *
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                >
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="form-group">
+
+                <label for="phone">
+                    PHONE NUMBER *
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+91 XXXXX XXXXX"
+                    autocomplete="tel"
+                >
+
+            </div>
+
+
+            <!-- OPTIONAL LINKEDIN -->
+
+            <div class="form-group">
+
+                <label for="linkedin">
+                    LINKEDIN PROFILE
+                    <span>(OPTIONAL)</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="linkedin"
+                    placeholder="linkedin.com/in/yourname"
+                >
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Continue -->
+
+        <button
+            type="button"
+            class="primary-btn continue-btn"
+            onclick="goToStepThree()"
+        >
+
+            <span>
+                CONTINUE
+            </span>
+
+            <strong>
+                →
+            </strong>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= STEP 03 ================= -->
+
+<section id="step3Section" class="registration-section hidden">
+
+    <div class="registration-container">
+
+        <!-- Header -->
+
+        <div class="registration-header">
+
+            <button
+                class="back-btn"
+                onclick="backToStepTwo()"
+            >
+                ← BACK
+            </button>
+
+            <div class="step-counter">
+
+                <strong>03</strong>
+
+                <span>/ 03</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Progress -->
+
+        <div class="progress-track">
+
+            <div class="progress-fill step-three-progress"></div>
+
+        </div>
+
+
+        <!-- Heading -->
+
+        <div class="registration-heading">
+
+            <span class="step-label">
+                STEP 03
+            </span>
+
+            <h2>
+                REVIEW YOUR<br>
+                <span>REGISTRATION.</span>
+            </h2>
+
+            <p>
+                Make sure everything looks correct before registering.
+            </p>
+
+        </div>
+
+
+        <!-- ================= REVIEW ================= -->
+
+        <div class="review-card">
+
+
+            <!-- PERSONAL -->
+
+            <div class="review-section">
+
+                <div class="review-section-title">
+                    PERSONAL INFORMATION
+                </div>
+
+
+                <div class="review-grid">
+
+                    <div class="review-item">
+
+                        <small>
+                            FULL NAME
+                        </small>
+
+                        <strong id="reviewName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="review-item">
+
+                        <small>
+                            COLLEGE STUDENT ID
+                        </small>
+
+                        <strong id="reviewStudentId">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="review-item">
+
+                        <small>
+                            SECTION
+                        </small>
+
+                        <strong id="reviewSection">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="review-item">
+
+                        <small>
+                            YEAR
+                        </small>
+
+                        <strong id="reviewYear">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="review-item review-full">
+
+                        <small>
+                            SPECIALIZATION / INTEREST
+                        </small>
+
+                        <strong id="reviewSpecialization">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="review-section">
+
+                <div class="review-section-title">
+                    CONTACT INFORMATION
+                </div>
+
+
+                <div class="review-grid">
+
+                    <div class="review-item">
+
+                        <small>
+                            EMAIL
+                        </small>
+
+                        <strong id="reviewEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="review-item">
+
+                        <small>
+                            PHONE
+                        </small>
+
+                        <strong id="reviewPhone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="review-item review-full">
+
+                        <small>
+                            LINKEDIN
+                        </small>
+
+                        <strong id="reviewLinkedin">
+                            Not provided
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIGITAL IDENTITY -->
+
+            <div class="review-section">
+
+                <div class="review-section-title">
+                    DIGITAL IDENTITY GOALS
+                </div>
+
+
+                <div
+                    class="review-goals"
+                    id="reviewGoals"
+                >
+
+                    <span class="no-goals">
+                        No goals selected
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- REGISTER -->
+
+        <button
+            type="button"
+            class="primary-btn continue-btn register-final-btn"
+            onclick="registerUser()"
+        >
+
+            <span>
+                REGISTER
+            </span>
+
+            <strong>
+                →
+            </strong>
+
+        </button>
+
+
+        <p class="privacy-note">
+
+            By registering, you confirm that the information
+            provided above is correct.
+
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- QR Code -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+<!-- Your JavaScript -->
+<script src="script.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Verify Event Pass | Prahar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            font-family: Arial, sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #10152b,
+                    #050509 60%
+                );
+
+            color: #ffffff;
+        }
+
+        .verify-card {
+            width: 100%;
+            max-width: 520px;
+
+            padding: 35px;
+
+            border: 1px solid rgba(0, 229, 255, 0.35);
+            border-radius: 22px;
+
+            background: rgba(12, 16, 30, 0.92);
+
+            box-shadow:
+                0 0 40px rgba(0, 229, 255, 0.12);
+
+            text-align: center;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 15px;
+
+            border: 1px solid #00e5ff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 0 20px rgba(0, 229, 255, 0.25);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .eyebrow {
+            color: #00e5ff;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .event-name {
+            color: #aeb5c7;
+            margin-bottom: 30px;
+        }
+
+        .status {
+            padding: 18px;
+
+            border-radius: 14px;
+
+            margin-bottom: 25px;
+
+            font-size: 20px;
+
+            font-weight: 700;
+        }
+
+        .valid {
+            color: #00ff9d;
+
+            border: 1px solid rgba(0, 255, 157, 0.35);
+
+            background: rgba(0, 255, 157, 0.08);
+        }
+
+        .invalid {
+            color: #ff4d6d;
+
+            border: 1px solid rgba(255, 77, 109, 0.35);
+
+            background: rgba(255, 77, 109, 0.08);
+        }
+
+        .loading {
+            color: #00e5ff;
+
+            border: 1px solid rgba(0, 229, 255, 0.3);
+
+            background: rgba(0, 229, 255, 0.06);
+        }
+
+        .details {
+            text-align: left;
+
+            display: none;
+
+            gap: 12px;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            padding: 13px 0;
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .detail span {
+            color: #858da1;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+        .detail strong {
+            text-align: right;
+            color: #ffffff;
+        }
+
+        .footer {
+            margin-top: 25px;
+
+            color: #687086;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 500px) {
+
+            .verify-card {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .detail {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .detail strong {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="verify-card">
+
+        <div class="logo">
+            <img
+                src="assets/prahar-logo.png"
+                alt="Prahar Logo"
+            >
+        </div>
+
+        <p class="eyebrow">
+            PRAHAR • EVENT VERIFICATION
+        </p>
+
+        <h1>
+            Event Pass Verification
+        </h1>
+
+        <p class="event-name">
+            CODE YOUR IDENTITY
+        </p>
+
+        <div
+            id="status"
+            class="status loading"
+        >
+            VERIFYING PASS...
+        </div>
+
+        <div
+            id="details"
+            class="details"
+        >
+
+            <div class="detail">
+                <span>Name</span>
+                <strong id="studentName">—</strong>
+            </div>
+
+            <div class="detail">
+                <span>Registration ID</span>
+                <strong id="registrationId">—</strong>
+            </div>
+
+            <div class="detail">
+                <span>Student ID</span>
+                <strong id="studentId">—</strong>
+            </div>
+
+            <div class="detail">
+                <span>Section</span>
+                <strong id="section">—</strong>
+            </div>
+
+            <div class="detail">
+                <span>Specialization</span>
+                <strong id="specialization">—</strong>
+            </div>
+
+            <div class="detail">
+                <span>Year</span>
+                <strong id="year">—</strong>
+            </div>
+
+            <div class="detail">
+                <span>Event Date</span>
+                <strong>25 September 2026</strong>
+            </div>
+
+        </div>
+
+        <p class="footer">
+            PRAHAR • CODE YOUR IDENTITY • 25.09.2026
+        </p>
+
+    </div>
+
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <script>
+
+        // ========================================
+        // SUPABASE CONFIG
+        // ========================================
+
+        const SUPABASE_URL =
+            "https://vhacrrzhghpuhmxeadqe.supabase.co";
+
+        const SUPABASE_PUBLISHABLE_KEY =
+            "sb_publishable_Jrb0RGJxQn5169v6YJ--sA_vQGMVWEh";
+
+
+        const supabaseClient =
+            window.supabase.createClient(
+                SUPABASE_URL,
+                SUPABASE_PUBLISHABLE_KEY
+            );
+
+
+        // ========================================
+        // GET REGISTRATION ID FROM URL
+        // ========================================
+
+        const params =
+            new URLSearchParams(
+                window.location.search
+            );
+
+        const registrationId =
+            params.get("id");
+
+
+        // ========================================
+        // ELEMENTS
+        // ========================================
+
+        const status =
+            document.getElementById("status");
+
+        const details =
+            document.getElementById("details");
+
+
+        // ========================================
+        // VERIFY REGISTRATION
+        // ========================================
+
+        async function verifyRegistration() {
+
+            if (!registrationId) {
+
+                status.className =
+                    "status invalid";
+
+                status.textContent =
+                    "❌ INVALID EVENT PASS";
+
+                return;
+            }
+
+
+            const { data, error } =
+                await supabaseClient
+                    .from("registrations")
+                    .select(
+                        "registration_id,name,student_id,section,specialization,year"
+                    )
+                    .eq(
+                        "registration_id",
+                        registrationId
+                    )
+                    .maybeSingle();
+
+
+            if (error) {
+
+                console.error(
+                    "Verification Error:",
+                    error
+                );
+
+                status.className =
+                    "status invalid";
+
+                status.textContent =
+                    "⚠️ VERIFICATION ERROR";
+
+                return;
+            }
+
+
+            if (!data) {
+
+                status.className =
+                    "status invalid";
+
+                status.textContent =
+                    "❌ INVALID EVENT PASS";
+
+                return;
+            }
+
+
+            // ========================================
+            // VALID PASS
+            // ========================================
+
+            status.className =
+                "status valid";
+
+            status.textContent =
+                "✅ VALID EVENT PASS";
+
+
+            document
+                .getElementById("studentName")
+                .textContent =
+                data.name;
+
+            document
+                .getElementById("registrationId")
+                .textContent =
+                data.registration_id;
+
+            document
+                .getElementById("studentId")
+                .textContent =
+                data.student_id;
+
+            document
+                .getElementById("section")
+                .textContent =
+                data.section;
+
+            document
+                .getElementById("specialization")
+                .textContent =
+                data.specialization;
+
+            document
+                .getElementById("year")
+                .textContent =
+                data.year;
+
+
+            details.style.display =
+                "grid";
+        }
+
+
+        // ========================================
+        // START VERIFICATION
+        // ========================================
+
+        verifyRegistration();
+
+    </script>
+
+</body>
+</html>
