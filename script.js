@@ -691,22 +691,12 @@ qrContainer.innerHTML = "";
 // Generate QR
 new QRCode(qrContainer, {
     text: verificationUrl,
-    width: 120,
-    height: 120,
+    width: 180,
+    height: 180,
     colorDark: "#000000",
     colorLight: "#ffffff",
-    correctLevel: QRCode.CorrectLevel.H
+    correctLevel: QRCode.CorrectLevel.M
 });
-
-    new QRCode(qrContainer, {
-    text: verificationUrl,
-        width: 120,
-        height: 120,
-        colorDark: "#000000",
-        colorLight: "#ffffff",
-        correctLevel:
-            QRCode.CorrectLevel.H
-    });
 
 
     // ========================================
