@@ -2718,3 +2718,53 @@ body {
         display: none !important;
     }
 }
+/* ========================================
+   EVENT PASS QR FIX
+======================================== */
+
+.pass-qr-area {
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#passQrCode {
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 120px !important;
+    max-height: 120px !important;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#passQrCode img,
+#passQrCode canvas,
+#passQrCode table {
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 120px !important;
+    max-height: 120px !important;
+    display: block;
+}
+@media (max-width: 700px) {
+
+    .pass-student {
+        grid-template-columns: 1fr;
+    }
+
+    .pass-qr-area {
+        width: 140px;
+        min-width: 140px;
+        max-width: 140px;
+        margin: 20px auto 0;
+    }
+
+}
