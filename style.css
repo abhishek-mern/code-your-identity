@@ -2768,3 +2768,343 @@ body {
     }
 
 }
+/* ========================================
+   MOBILE HERO CENTER FIX
+======================================== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 40px 20px 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content > * {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(3rem, 13vw, 5rem);
+        line-height: 0.95;
+    }
+
+    .hero-content p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-tags {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-date {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content .primary-btn,
+    .hero-content .cta-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .hero-visual img,
+    .hero-visual svg {
+        max-width: 100%;
+    }
+}
+/* ========================================
+   LANDING PAGE - MOBILE VISUAL FIX
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        overflow: hidden;
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: 420px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-visual > * {
+        max-width: 100%;
+    }
+}
+/* ========================================
+   MOBILE LANDING PAGE - EXACT FIX
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* Make hero a single column */
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    /* ==============================
+       MAIN CONTENT
+    ============================== */
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 45px 20px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+        font-size: clamp(3.2rem, 15vw, 5rem);
+        line-height: 0.92;
+
+        box-sizing: border-box;
+    }
+
+    .hero-content .tagline {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Topics */
+    .topics {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+    }
+
+    /* Date */
+    .event-date {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* CTA */
+    .primary-btn {
+        width: min(100%, 360px);
+
+        margin-left: auto;
+        margin-right: auto;
+
+        box-sizing: border-box;
+    }
+
+    .limited {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* ==============================
+       RIGHT VISUAL
+    ============================== */
+
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+
+        height: 380px;
+
+        position: relative;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        box-sizing: border-box;
+    }
+
+    .visual-container {
+        width: 500px;
+        height: 500px;
+
+        position: absolute;
+
+        left: 50%;
+        top: 0;
+
+        transform: translateX(-50%) scale(0.62);
+
+        transform-origin: top center;
+    }
+
+}
+/* ========================================
+   MOBILE LANDING PAGE FIX
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        width: 100%;
+        padding: 30px 16px 50px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center;
+
+        font-size: clamp(3rem, 14vw, 4.5rem);
+        line-height: 0.92;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-content .tagline {
+        text-align: center;
+    }
+
+    .topics {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .event-date {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .primary-btn {
+        width: min(100%, 360px);
+        margin-left: auto;
+        margin-right: auto;
+
+        box-sizing: border-box;
+    }
+
+    .limited {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Futuristic visual */
+
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+
+        position: relative;
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+    .visual-container {
+        position: absolute;
+
+        left: 50%;
+        top: 0;
+
+        transform: translateX(-50%) scale(0.62);
+        transform-origin: top center;
+    }
+}
