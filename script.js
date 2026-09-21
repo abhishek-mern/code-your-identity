@@ -668,14 +668,7 @@ async function registerUser() {
         registrationId;
 
 
-    // ========================================
-    // GENERATE QR CODE
-    // ========================================
-
-    const qrContainer =
-        document.getElementById("passQrCode");
-
-    qrContainer.innerHTML = "";
+   
 
     // ========================================
 // GENERATE VERIFICATION URL
