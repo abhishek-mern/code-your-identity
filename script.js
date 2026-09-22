@@ -688,6 +688,8 @@ const qrContainer =
 // Clear previous QR
 qrContainer.innerHTML = "";
 
+console.log("QR URL:", verificationUrl);
+
 // Generate QR
 new QRCode(qrContainer, {
     text: verificationUrl,
